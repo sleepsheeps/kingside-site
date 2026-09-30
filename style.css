@@ -1,0 +1,38 @@
+:root {
+  --bg: #ECE8E0;
+  --card: #F8F6F1;
+  --line: #DED8CD;
+  --text: #34363B;
+  --muted: #7C766E;
+  --accent: #474A51;
+  --terra: #C97961;
+  --terra-soft: #D98C73;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; color: var(--text); font-family: var(--body); line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 22px 72px; }
+.top { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.top img { width: 40px; height: auto; }
+.top span { font-family: var(--display); font-weight: 600; font-size: 22px; color: var(--text); }
+h1 { font-family: var(--display); font-weight: 600; font-size: 42px; line-height: 1.12; letter-spacing: -0.5px; margin: 38px 0 0; }
+h1 em { font-style: normal; color: var(--terra); }
+.lede { font-size: 18px; color: var(--muted); margin: 16px 0 0; }
+.meta { font-size: 13px; color: var(--muted); margin-top: 10px; }
+h2 { font-size: 12px; font-weight: 700; letter-spacing: 2.4px; text-transform: uppercase; color: var(--muted); margin: 46px 0 12px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 4px 22px; }
+.entry { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.entry:last-child { border-bottom: 0; }
+.entry strong { display: block; font-family: var(--display); font-weight: 600; font-size: 20px; margin-bottom: 6px; }
+.entry p, .entry ul, .entry ol { margin: 0; color: var(--muted); font-size: 15.5px; }
+.entry ul, .entry ol { padding-left: 20px; }
+.entry p + p, .entry p + ul, .entry ul + p, .entry p + ol, .entry ol + p { margin-top: 8px; }
+.entry em { font-style: normal; color: var(--text); font-weight: 600; }
+p { color: var(--muted); }
+a { color: var(--terra); text-underline-offset: 3px; }
+.badge { display: inline-block; margin-top: 24px; padding: 9px 18px; border-radius: 999px; background: var(--accent); color: #FFF8F0; font-weight: 700; font-size: 12.5px; letter-spacing: 1.8px; }
+footer { margin-top: 54px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+footer a { color: var(--muted); margin-right: 18px; }
+@media (max-width: 480px) { h1 { font-size: 34px; } .lede { font-size: 16.5px; } .badge { font-size: 11px; letter-spacing: 1.2px; } }
